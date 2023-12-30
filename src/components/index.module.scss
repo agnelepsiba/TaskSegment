@@ -1,0 +1,146 @@
+.mainPage {
+    background-color: #99999912;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.colorDots {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #979797;
+        font-size: 12px;
+        font-family: 'intermedium';
+    }
+    .dotRed {
+        height: 7px;
+        display: block;
+        width: 8px;
+        background-color: #d24572;
+        border-radius: 50px;
+    }
+    .dotGreen {
+        height: 7px;
+        border-radius: 50px;
+        width: 8px;
+        display: block;
+        background-color: green;
+    }
+}
+label {
+    margin-bottom: 15px;
+    display: block;
+    color: #979797;
+    font-size: 12px;
+    font-family: 'intermedium';
+} 
+input {
+    margin-bottom: 10px;
+}
+.segmentArea {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+    .dotRed {
+        height: 7px;
+        display: block;
+        width: 9px;
+        background-color: #d24572;
+        border-radius: 50px;
+    }
+    .dotGreen {
+        height: 7px;
+        border-radius: 50px;
+        width: 7px;
+        display: block;
+        background-color: green;
+    }
+    .remove {
+        display: flex;
+        background-color: #f2fbf9;
+        height: 30px;
+        width: 36px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 3px;
+        line-height: 24px;
+    }
+   
+
+}
+.addBtn {
+    text-decoration: underline;
+    color: #40b192;
+    font-size: 12px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-family: 'intermedium';
+}
+.drawerBody {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 81px);
+}
+.saveBtn {
+    border: 1px solid #000;
+    background-color: #fff;
+    width: max-content;
+    padding: 0px 26px;
+    margin-top: 10%;
+    font-family: 'intermedium';
+    color: green;
+    margin-left: 10%;
+}
+.drawerFooter {
+    background-color: #f6f6f6;
+    padding: 15px;
+    margin-left: -22px;
+    margin-right: -22px;
+    display: flex;
+    justify-content: end;
+    margin-top: auto;
+    gap: 12px;
+    .btnGreen {
+        background-color: #40b192;
+        color: #fff;
+        box-shadow: none;
+        border: none;
+        line-height: 24px;
+        height: 32px;
+        font-size: 12px;
+        font-family: 'intermedium';
+        &:hover {
+            color: #fff !important;
+        }
+    }
+    .btnWhite
+     {
+        background-color: #fff;
+        color: #d24572;
+        box-shadow: none;
+        border: none;
+        font-size: 12px;
+        line-height: 24px;
+        font-family: 'intermedium';
+        height: 32px;
+        &:hover {
+            color: #d24572 !important;
+        }
+    }
+}
+
+.blueborder{
+    padding: 10px; // Adjust padding as needed
+  border: 1px solid #0b79df;
+  margin-bottom: 10px;
+
+}

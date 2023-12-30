@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "interregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "intermedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Inter-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "intersemibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Inter-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "interbold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Inter-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "interextrabold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Inter-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "interlight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Inter-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "interthin";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Inter-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "interextralight";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Inter-ExtraLight.ttf") format("truetype");
+}
+
+$screen-big1699: 1699px;
+$screen-big1599: 1599px;
+$screen-big1399: 1399px;
+$screen-big1199: 1199px;
+$screen-big1023: 1023px;
+$screen-big900: 900px;
+$screen-big800: 800px;
+$screen-big767: 767px;
+$screen-big700: 700px;
+$screen-big600: 600px;
+$screen-big575: 575px;
+$screen-big400: 400px;
+// Big1
+@mixin big01 {
+  @media (max-width: #{$screen-big1699}) {
+    @content;
+  }
+}
+// Big1
+@mixin big1 {
+  @media (max-width: #{$screen-big1599}) {
+    @content;
+  }
+}
+// Big2
+@mixin big2 {
+  @media (max-width: #{$screen-big1399}) {
+    @content;
+  }
+}
+// Big3
+@mixin big3 {
+  @media (max-width: #{$screen-big1199}) {
+    @content;
+  }
+}
+// Big4
+@mixin big4 {
+  @media (max-width: #{$screen-big1023}) {
+    @content;
+  }
+}
+// Big5
+@mixin big5 {
+  @media (max-width: #{$screen-big900}) {
+    @content;
+  }
+}
+// Big6
+@mixin big6 {
+  @media (max-width: #{$screen-big767}) {
+    @content;
+  }
+}
+// Big7
+@mixin big7 {
+  @media (max-width: #{$screen-big575}) {
+    @content;
+  }
+}
+
+// Big1
+@mixin hbig1 {
+  @media (max-height: #{$screen-big900}) {
+    @content;
+  }
+}
+// Big1
+@mixin hbig2 {
+  @media (max-height: #{$screen-big800}) {
+    @content;
+  }
+}
+// Big2
+@mixin hbig3 {
+  @media (max-height: #{$screen-big700}) {
+    @content;
+  }
+}
+// Big3
+@mixin hbig4 {
+  @media (max-height: #{$screen-big600}) {
+    @content;
+  }
+}
+
+// Main Variables
+
+$black: #000;
+$logogreen: #02e79e;
+$buttonGreen: #00d499;
+$buttonGreenHover: #00b885;
+$buttonTextColor: #252625;
+$buttonWhite: #fff;
+$buttonWhiteHover: #00d499;
+$buttonTextColor: #252625;
+
+:root {
+  --full-white: "#ffffff";
+  --mint-green-50: "#dcf5ee";
+  --true-black-300: "#d2d3d4";
+  --true-black-800: "#252526";
+  --fontRegular: "interregular";
+  --fontBold: "interBold";
+  --fontMedium: "interMedium";
+  --fontSemibold: "interSemibold";
+  --fontExtrabold: "interextrabold";
+  --fontLight: "interlight";
+  --fontThin: "interthin";
+}
+
+body {
+  font-size: 14px;
+  overflow: hidden;
+  line-height: 24px;
+  font-family: "intermedium";
+  overflow-y: scroll;
+}
+h1 {
+  font-size: 42px;
+  font-family: "interbold";
+  margin: 1rem 0 2rem;
+}
+h3 {
+  font-size: 24px;
+  font-family: "InterSemibold";
+  margin: 0 0 0.5rem;
+}
+h4 {
+  font-size: 20px;
+  font-family: "InterSemibold";
+  margin: 0 0 1rem;
+}
+h5 {
+  font-size: 18px;
+  font-family: "InterSemibold";
+  margin: 0 0 0.5rem;
+}
